@@ -1,0 +1,14 @@
+# Python scripts
+take_screenshots.py
+update_html.py
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Gemini/Antigravity internal files (if any)
+.gemini/
+brain/
+task.md
+implementation_plan.md
+walkthrough.md

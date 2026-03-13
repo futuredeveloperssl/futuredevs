@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://fonts.gstatic.com https://wa.me https://t.me; img-src 'self' data: https:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <title>Future Developers | Software, Bots & Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-wrapper">
+                <svg class="loader-rings" viewBox="0 0 280 280">
+                    <defs>
+                        <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="var(--accent-green)" />
+                            <stop offset="100%" stop-color="var(--accent-green)" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                        <filter id="glowInner" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <circle class="ring ring-track" cx="140" cy="140" r="100"></circle>
+                    <circle class="ring ring-dashed-inner" cx="140" cy="140" r="85"></circle>
+                    <circle class="ring ring-progress-adv" id="ring-progress" cx="140" cy="140" r="100"></circle>
+                    <circle class="ring ring-segmented-outer" cx="140" cy="140" r="118"></circle>
+                    <circle class="ring ring-orbital-dot" cx="140" cy="140" r="130"></circle>
+                </svg>
+                <div class="percentage" id="percentage">0</div>
+            </div>
+            <div class="loader-status">INITIALIZING SYSTEM</div>
+        </div>
+    </div>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Future<span>Devs</span></div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#community">Community</a></li>
+        </ul>
+        <a href="#contact" class="btn-outline">Contact Us</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="stagger-text">Build The Future.<br>Software, Web & Bots.</h1>
+                <p class="stagger-text">Future Developers is a premier agency providing top-tier websites, telegram bots, and custom software to elevate your business and give you the best possible experience.</p>
+                <div class="hero-actions stagger-text">
+                    <a href="#start" class="btn-primary">Get Started</a>
+                    <a href="#learn" class="btn-text">Learn More <span class="arrow">→</span></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/hero_dev.png" alt="Future Developer" class="hero-image" id="hero-img">
+                <div class="circular-badge">
+                    <svg viewBox="0 0 100 100">
+                        <path id="curve" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+                        <text>
+                            <textPath href="#curve">FUTURE DEVS • SOFTWARE • BOTS • WEB • </textPath>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-bar glass-panel">
+            <div class="stat-item">
+                <span class="stat-label">Projects</span>
+                <span class="stat-value">14+</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Telegram Bots</span>
+                <span class="stat-value">3+</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Happy Clients</span>
+                <span class="stat-value">12+</span>
+            </div>
+            <div class="eth-price">
+                <span class="stat-label">Rating</span>
+                <span class="stat-value">4.9/5 <span class="star">★</span></span>
+            </div>
+        </section>
+
+        <section class="trending-section" id="portfolio">
+            <div class="trending-grid">
+                <a href="website.html" style="display: block; text-decoration: none;" class="grid-item">
+                    <img src="assets/web_mock_2_1773279774862.png" id="proj-1" alt="Websites">
+                    <div class="image-label glass-label">Websites</div>
+                </a>
+                <a href="software.html" style="display: block; text-decoration: none;" class="grid-item">
+                    <img src="assets/service_software.png" id="proj-2" alt="Software">
+                    <div class="image-label glass-label">Software Solutions</div>
+                </a>
+                <a href="bot.html" style="display: block; text-decoration: none;" class="grid-item">
+                    <img src="assets/service_bot.png" id="proj-3" alt="Telegram Bots">
+                    <div class="image-label glass-label">Telegram Bots</div>
+                </a>
+                <a href="app.html" style="display: block; text-decoration: none;" class="grid-item">
+                    <img src="assets/service_app.png" id="proj-4" alt="Desktop Apps">
+                    <div class="image-label glass-label">Desktop Apps</div>
+                </a>
+            </div>
+            <div class="trending-info">
+                <span class="subtitle">Our Services</span>
+                <h2>Trending Solutions<br>On This Week.</h2>
+                <p>Various kinds of software and bots that are trending in modern businesses. Don't miss out on the best technologies every week.</p>
+                <a href="#all" class="btn-text">See all <span class="arrow">→</span></a>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-container glass-panel">
+                <div class="contact-info">
+                    <h2>Ready to Build<br>The Future?</h2>
+                    <p>Whether you need a cutting-edge website, a powerful Telegram bot, or custom software solutions, we are here to help you succeed.</p>
+                </div>
+                <div class="contact-methods-grid">
+                    <a href="https://wa.me/94769168815" target="_blank" class="contact-card">
+                        <div class="contact-icon" style="background: rgba(37, 211, 102, 0.2); color: #25D366;">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-type">WhatsApp</span>
+                            <span class="contact-value">+94 76 916 8815</span>
+                        </div>
+                    </a>
+                    <a href="mailto:hello@futuredevs.com" class="contact-card">
+                        <div class="contact-icon" style="background: rgba(240, 220, 109, 0.2); color: var(--accent-yellow);">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-type">Email Us</span>
+                            <span class="contact-value">Futuredeveloperssl@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+94769168815" class="contact-card">
+                        <div class="contact-icon" style="background: rgba(162, 225, 115, 0.2); color: var(--accent-green);">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-type">Phone</span>
+                            <span class="contact-value">+94 76 916 8815</span>
+                        </div>
+                    </a>
+                    <div class="contact-card social-card">
+                        <span class="contact-type mb-small">Follow Us</span>
+                        <div class="social-links">
+                            <a href="https://whatsapp.com/channel/0029VbBqFWpBFLgRnKi9R12y" target="_blank" class="social-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+                            <a href="#" class="social-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                            <a href="#" class="social-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                            <a href="#" class="social-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/94769168815" target="_blank" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+    <!-- Floating Telegram Button -->
+    <a href="https://t.me/sljohnwick" target="_blank" class="floating-telegram" aria-label="Chat with us on Telegram">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+        </svg>
+    </a>
+</body>
+</html>
